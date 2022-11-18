@@ -119,13 +119,13 @@ void chucNang3(){
 	 }
 	 printf("Gio bat dau hat: %dh \nGio ket thuc hat: %dh\n", a, b);
 	 if(a == b) {
-	 	printf("So gio hat la %d \n", a - b);
+	 	printf("So gio hat la %d \n", a - b);// neu h bat dau bang h ket thuc se in ra luon ma khong can tinh gi het 
 	 	printf("So tien phai tra la 0 VND \n");
 	 } else {
 	 	if (a + 3 <b ){
 	 	tienHat =  ( b - a) * 150000;
 	 } else {
-	 	tienHat = 3 *150000 + (b - a - 3) * 150000 * 70 / 100;
+	 	tienHat = 3 *150000 + (b - a - 3) * 150000 * 70 / 100;//100% - 30% se con lai so tien 70% 
 	 }
 	 if(a >= 14 && a <= 17) {
 	 	khuyenMai  = tienHat * 10 /100;
