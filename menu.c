@@ -101,39 +101,79 @@ void chucNang2(){
 	
 void chucNang3(){
 	 system("cls");
-	 int a, b, tienHat, khuyenMai = 0;
-	 printf("Chuong trinh tinh tien karaoke \n"); 
-	 do{
-	 printf("Nhap vao gio bat dau: ");
-	 scanf("%d",&a); 
-	 }while(a < 12 || a > 23);
-	
-	 do{
-	 printf("Nhap vao gio ket thuc: ");
-	 scanf("%d",&b);
-	 }while(b < 12 || b > 23);
-	 if ( a > b){
-	 int c = a;
-	 a = b;
-	 b = c; 
-	 }
-	 printf("Gio bat dau hat: %dh \nGio ket thuc hat: %dh\n", a, b);
-	 if(a == b) {
-	 	printf("So gio hat la %d \n", a - b);// neu h bat dau bang h ket thuc se in ra luon ma khong can tinh gi het 
-	 	printf("So tien phai tra la 0 VND \n");
-	 } else {
-	 	if (a + 3 <b ){
-	 	tienHat =  ( b - a) * 150000;
-	 } else {
-	 	tienHat = 3 *150000 + (b - a - 3) * 150000 * 70 / 100;//100% - 30% se con lai so tien 70% 
-	 }
-	 if(a >= 14 && a <= 17) {
-	 	khuyenMai  = tienHat * 10 /100;
-	 }
-	 printf("So gio hat la: %dh \n", b - a);
-	 printf("So tien hat la: %d VND \n", tienHat);
-	 printf("Tien khuyen mai: %d VND \n", khuyenMai);
-	 printf("So tien phai tra la: %d VND \n", tienHat - khuyenMai);
+	 int batDau, ketThuc;
+    int gioHat, gioHatLv2, giaTien, giaTienGiam, tinhTien, giamGia, thanhToan;
+
+    //
+    printf("Chon gio bat dau: ");
+    scanf("%d", &batDau);
+    printf("Chon gio ket thuc: ");
+    scanf("%d", &ketThuc);
+
+    //
+    gioHat = ketThuc - batDau;
+    giaTien = 150000;
+    giamGia = 0;
+    //
+    if(12<= batDau && batDau <=23) {
+
+        if(12<= ketThuc && ketThuc <= 23) {
+
+            if(gioHat <= 3) {
+                
+                if(14 <= batDau && batDau <= 17) {
+                    tinhTien = gioHat * giaTien;
+                    giamGia = 0.1 * tinhTien;
+                    thanhToan = tinhTien - giamGia;
+
+                    printf("\nSo gio hat: %d", gioHat);
+                    printf("\nGia tien: %d", giaTien);
+                    printf("\nGiam gia: %d", giamGia);
+                    printf("\nSo tien can thanh toan: %d", thanhToan);
+
+                } else {
+                    tinhTien = gioHat * giaTien;
+                    thanhToan = tinhTien;
+
+                    printf("\nSo gio hat: %d", gioHat);
+                    printf("\nGia tien: %d", giaTien);
+                    printf("\nGiam gia: %d", giamGia);
+                    printf("\nSo tien can thanh toan: %d", thanhToan);
+                }
+            } else {
+                giaTienGiam = giaTien;
+                giaTienGiam *= 0.3;
+                giaTien = giaTien - giaTienGiam;
+
+                gioHatLv2 = gioHat;
+                gioHatLv2 -=3;
+
+                if(14<= batDau && batDau <=17 ){
+                    tinhTien = (3*150000) + (gioHatLv2 * giaTien);
+                    giamGia = 0.1 * tinhTien;
+                    thanhToan = tinhTien - giamGia;
+
+                    printf("\nSo gio hat: %d", gioHat);
+                    printf("\nGia tien: %d", giaTien);
+                    printf("\nGiam gia: %d", giamGia);
+                    printf("\nSo tien can thanh toan: %d", thanhToan);
+                    
+                } else {
+                    tinhTien = (3*150000) + (gioHatLv2 * giaTien);
+                    thanhToan = tinhTien;
+
+                    printf("\nSo gio hat: %d", gioHat);
+                    printf("\nGia tien: %d", giaTien);
+                    printf("\nGiam gia: %d", giamGia);
+                    printf("\nSo tien can thanh toan: %d \n", thanhToan);
+                }
+            }
+
+        } else {
+
+            printf("Quan khong hoat dong\n");
+        }
+
 }
 }
 void chucNang4(){
