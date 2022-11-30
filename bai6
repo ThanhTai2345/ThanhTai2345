@@ -1,0 +1,21 @@
+void laiSuat(int tienVay){
+		int tienLai;// tien lai hang thang 
+	int tienGoc = tienVay /12;// tien goc phai tra hang thang
+	int tienTra;//tien phai tra hang thang = tien goc + tien lai
+	int tienCon;//tien con lai sau khi tra tien goc
+	int i; 
+	tienCon = tienVay;
+		printf("Ky han | Lai phai tra | Goc phai tra | So tien phai tra | So tien con lai | \n"); 
+	for(i = 1; i<=12; i++){
+		tienLai = tienCon * 0.05;
+		tienTra = tienGoc + tienLai;
+		tienCon = tienCon - tienGoc; 
+		printf("--------------------------------------------------------------------------\n");
+		printf("%6d  | ",i);
+		printf("%12d | ", tienLai);
+		printf("%12d | ", tienGoc);
+		printf("%16d |", tienTra);
+		printf("%15d | ", tienCon); 
+		printf("\n"); 
+		 
+	} 
