@@ -4,7 +4,7 @@
 #include <math.h>
 #include <string.h>
 #include <windows.h>
-	 int  ktSN(float number){
+int  ktSN(float number){
 	 int num = -1;
 	 if(number == (int)number){
 	 num =1; 
@@ -14,7 +14,7 @@
 	 return num;  
 }
 //
-	 void ktSNT(int number){
+void ktSNT(int number){
 	 int kt = 0;
 	 int i = 2 ;
 	 for( i; i <= number/2; i++){	
@@ -28,8 +28,9 @@
 	 printf("Day khong phai la so nguyen to \n");
      }
 }
+
 //
-     void ktSoChinhPhuong(int number){
+void ktSoChinhPhuong(int number){
      int kt ; 
      for (int i = 2; i<= number/2; i++){
      if(i * i == number){
@@ -45,13 +46,11 @@
 	  	
 }  
 	
-//
-	
-void chucNang1(){
-	
 
-	 float  num  ;
+//	
+void chucNang1(){
 	 system("cls"); 
+	 float  num  ;
 	 printf("Chuong trinh kiem tra so nguyen \n");
 	 scanf("%f",&num); 
 	 int ktSoNguyen = ktSN(num) ;
@@ -88,16 +87,15 @@ void chucNang2(){
 	 while(a != b){
 	 if(a > b ){
 	 a -= b; 
-	 } else {
+	} else {
 	 b -= a; 
-     } 
-     } 
-	 ucln = a;
-	 bcnn = a1 * b1 /a;
-	  
-	 } 
-	 printf("Boi chung nho nhat cua %d va %d la %d \n",a1, b1, bcnn); 
-	 printf("Uoc chung lon nhat cua %d va  %d la %d \n",a1, b1, ucln);
+    } 
+} 
+	 	ucln = a;
+	 	bcnn = a1 * b1 /a;
+	} 
+	 	printf("Boi chung nho nhat cua %d va %d la %d \n",a1, b1, bcnn); 
+	 	printf("Uoc chung lon nhat cua %d va  %d la %d \n",a1, b1, ucln);
 } 
 	
 void chucNang3(){
@@ -177,6 +175,9 @@ void chucNang3(){
 
 }
 }
+
+
+//
 void chucNang4(){
 	  system("cls");
 	  float bac1= 1678;
@@ -209,10 +210,11 @@ void chucNang4(){
 	 }else if(sokWh <= 500){
 	 	tienDien =  50*bac1+(50*bac2)+(100*bac3)+(100*bac4)+(100*bac5)+(sokWh - 400)*bac6;
 	 	printf("ban da su dung tu 401-500kwh,so tien ban phai tra la: %.2f\n", tienDien);
-	 }
-	  
-	  
+	 }	  
 }
+
+
+//
 void chucNang5(){
 	int soTien, sotoTien;
 	int menhGia[9] = {500, 200, 100, 50, 20, 10, 5, 2, 1};
@@ -229,6 +231,9 @@ void chucNang5(){
 		}
 	} 
 }
+
+
+//
 void chucNang6(){
 	system("cls");
 	float tienVay;
@@ -246,28 +251,54 @@ void chucNang6(){
 		tongtienmoithang = tiengocmoithang + tienlaimoithang;
 		tienVay = tienVay - tiengocmoithang;
 		tongTien += tongtienmoithang;
-		printf("So tien can phai tra trong 1 thang:                                %6d \n",i);
-		printf(" %.0f\t      |  %.0f\t | %.0f\t |  %.0f  |\n", tienlaimoithang,tiengocmoithang,tongtienmoithang,tienVay);
+		printf("So tien can phai tra trong 1 thang:                                   %6d \n",i);
+		printf(" %.0f VND\t      |  %.0f VND\t | %.0f VND\t |  %.0f VND |\n", tienlaimoithang,tiengocmoithang,tongtienmoithang,tienVay);
 	}
-		printf("Tong tien phai tra sau %d thang la: %0.f\n", thoiHan, tongTien);
+		printf("Tong tien phai tra sau %d thang la: %0.f VND\n ", thoiHan, tongTien);
 }
+
+
+//
 void chucNang7(){
-}
-void chucNang8(){
-}
-void chucNang9(){
-}
-void chucNang10(){
-}
+	system("cls");
+	printf("Chuc nang dang duoc xay dung \n");
 	
+	
+}
+
+
+//
+void chucNang8(){
+	system("cls");
+	printf("Chuc nang dang duoc xay dung \n");
+	
+}
+
+
+//
+void chucNang9(){
+	system("cls");
+	printf("Chuc nang dang duoc xay dung \n");
+}
+
+
+//
+void chucNang10(){
+		
+	system("cls");
+	printf("Chuc nang dang duoc xay dung \n");
+}
+
+
+//	
 int main(){
 	int cn;
 	do{
-	system("color 04"); 
-	printf("**-------------------------Cac chuc nang--------------------------** \n");
-	printf("**0. Thoat                                                        ** \n");
-	printf("**1. Kiem tra so nguyen                                           ** \n");
-	printf("**2. Tim uoc so chung va boi so chung cua 2 so                    ** \n");
+		system("color 04"); 
+		printf("**-------------------------Cac chuc nang--------------------------** \n");
+		printf("**0. Thoat                                                        ** \n");
+		printf("**1. Kiem tra so nguyen                                           ** \n");
+		printf("**2. Tim uoc so chung va boi so chung cua 2 so                    ** \n");
         printf("**3. Chuong trinh kiem tien cho quan karaoke                      ** \n");
         printf("**4. Tinh tien dien                                               ** \n");
         printf("**5. Chuc nang doi tien                                           ** \n");
