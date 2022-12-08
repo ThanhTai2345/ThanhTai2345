@@ -4,6 +4,7 @@
 #include <math.h>
 #include <string.h>
 #include <windows.h>
+
 int  ktSN(float number){
 	 int num = -1;
 	 if(number == (int)number){
@@ -64,7 +65,7 @@ void chucNang1(){
 		 
  	 
 } 
-
+///////////////////////////////////////////////////
 void chucNang2(){
 	 system("cls");
 	 printf("Uoc chung lon nhat va Boi chung nho nhat \n");
@@ -77,7 +78,7 @@ void chucNang2(){
 	 if (a == 0) {
 	 ucln = b;
 	 bcnn = 0; 
-	 	}else if(b == 0){
+	 }else if(b == 0){
 	 ucln = a;
 	 bcnn = 0; 
 	 }else if(a == b){
@@ -97,7 +98,8 @@ void chucNang2(){
 	 	printf("Boi chung nho nhat cua %d va %d la %d \n",a1, b1, bcnn); 
 	 	printf("Uoc chung lon nhat cua %d va  %d la %d \n",a1, b1, ucln);
 } 
-	
+
+//////////////////////////////////////////	
 void chucNang3(){
 	 system("cls");
 	 int batDau, ketThuc;
@@ -177,7 +179,7 @@ void chucNang3(){
 }
 
 
-//
+//////////////////////////////////////////
 void chucNang4(){
 	  system("cls");
 	  float bac1= 1678;
@@ -214,7 +216,7 @@ void chucNang4(){
 }
 
 
-//
+///////////////////////////////////
 void chucNang5(){
 	int soTien, sotoTien;
 	int menhGia[9] = {500, 200, 100, 50, 20, 10, 5, 2, 1};
@@ -233,7 +235,7 @@ void chucNang5(){
 }
 
 
-//
+//////////////////////////////////////////////
 void chucNang6(){
 	system("cls");
 	float tienVay;
@@ -251,14 +253,14 @@ void chucNang6(){
 		tongtienmoithang = tiengocmoithang + tienlaimoithang;
 		tienVay = tienVay - tiengocmoithang;
 		tongTien += tongtienmoithang;
-		printf("So tien can phai tra trong 1 thang:                                   %6d \n",i);
-		printf(" %.0f VND\t      |  %.0f VND\t | %.0f VND\t |  %.0f VND |\n", tienlaimoithang,tiengocmoithang,tongtienmoithang,tienVay);
+		printf("So tien can phai tra trong 1 thang:\t\t\t\t%6d\n",i);
+		printf("%.0f VND\t|%.0f VND\t| %.0f VND\t|%.0f VND|\n", tienlaimoithang,tiengocmoithang,tongtienmoithang,tienVay);
 	}
 		printf("Tong tien phai tra sau %d thang la: %0.f VND\n ", thoiHan, tongTien);
 }
 
 
-//
+/////////////////////////////
 void chucNang7(){
 	system("cls");
 	printf("Chuc nang dang duoc xay dung \n");
@@ -267,7 +269,7 @@ void chucNang7(){
 }
 
 
-////
+////////////////////////////////////////
 struct sinhVien{
 	char ten[30];
 	float diemTb;
@@ -288,7 +290,6 @@ char *xepHocLuc(float diemTb){
 	return st;
 }
 
-/////
 void sapXepDanhSach(struct sinhVien danhSach[], int soLuong){
 	for(int i=0;i<soLuong-1;i++){
 		for(int j=i+1;j<soLuong;j++){
@@ -302,7 +303,6 @@ void sapXepDanhSach(struct sinhVien danhSach[], int soLuong){
 	}
 }
 
-////
 void nhapDanhSach(struct sinhVien danhSach[], int *soLuong){
 	printf("\nNhap so luong sinh vien: ");
 	scanf("%d",soLuong);
@@ -317,7 +317,6 @@ void nhapDanhSach(struct sinhVien danhSach[], int *soLuong){
 	}	
 }
 
-///
 void hienThiDanhSach(struct sinhVien danhSach[], int soLuong){
 	printf("\t\tTHONG TIN SINH VIEN\n");
 	for(int i=0;i<soLuong;i++){
@@ -328,7 +327,6 @@ void hienThiDanhSach(struct sinhVien danhSach[], int soLuong){
 }
 
 
-//
 void chucNang8(){
 	system("cls");
 	struct sinhVien danhSach[30];
@@ -344,19 +342,39 @@ void chucNang8(){
 }
 
 
-//
+///////////////////////////////////////////////////
 void chucNang9(){
 	system("cls");
-	printf("Chuc nang dang duoc xay dung \n");
+	int a, b;
+	printf("Nhap gia tri a= ");
+	scanf("%d",&a);
+	printf("nhap gia tri b= ");
+	scanf("%d", &a);
+	
+	int so1, so2;
+	srand(time(0));
+	so1  = 1 + rand() % 15;
+	so2 =  1 + rand() % 15;
+	printf("So duoc chon: So 1 %d - So 2 %d\n", so1, so2);
+	if((a == so1 && b == so2) || (a == so2 || b == so1)){
+		printf("Chuc mung ban da duoc giai nhat \n");
+	} 
+	else if( a == so1 || a == so2 || b == so2 || b == so1){
+		printf("Chuc ban da dat giai nhi \n");
+	}
+	else {
+		printf("Chuc ban may man lan sau \n");
+	}
 }
 
 
-//
-void chucNang10(){
-		
+////////////////////////////////////////////////////////
+void chucNang10(){	
 	system("cls");
-	printf("Chuc nang dang duoc xay dung \n");
+	printf("Chuc nang dang duoc xay dung\n");
+	
 }
+
 
 
 //	
@@ -377,7 +395,7 @@ int main(){
         printf("**9. Xay dung game FPOLY - LOOT (2/15)                            ** \n");
         printf("**10. Xay dung chuong trinh tinh toan phan so                     ** \n");
         printf("**----------------------------------------------------------------**\n"); 
-        printf("Moi ban chon [1-10]: ");
+        printf("Moi ban chon [0-10]: ");
         scanf("%d",&cn); 
         system("cls"); 
         system("Color 05");
