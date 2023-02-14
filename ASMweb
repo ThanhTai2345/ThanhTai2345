@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopthachcam</title>
+    <link rel="stylesheet" href="/w3_band/assets/themify-icons/themify-icons.css">
+    <style>
+        /*reset css*/
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .text-while {
+            color: #fff !important;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        #main {}
+
+        #header {
+            background: url(https://inkythuatso.com/uploads/thumbnails/800/2021/12/logo-fpt-polytechnic-inkythuatso-09-13-08-21.jpg) no-repeat 20px right;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 46px;
+            background-color: red;
+        }
+
+        #nav {
+            display: inline-block;
+            float: left;
+        }
+
+        #nav,
+        .subnav {
+            list-style: none;
+        }
+
+        #nav>li {
+            display: inline-block;
+        }
+
+        #nav li {
+
+            position: relative;
+        }
+
+        #nav>li>a {
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        #nav li a {
+            text-decoration: none;
+            line-height: 46px;
+            padding: 0 24px;
+            display: block;
+        }
+
+        #nav li:hover .subnav {
+            display: block;
+        }
+
+        #nav>li:hover>a,
+        #nav .subnav li:hover a {
+            color: #000;
+            background-color: #ccc;
+
+        }
+
+        #nav .subnav {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            min-width: 160px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        #nav .subnav a {
+            color: #000;
+            padding: 0 12px;
+            line-height: 38px;
+        }
+
+        #nav .nav-arrow-down {
+            font-size: 14px;
+        }
+
+        #header .search-btn {
+            color: #fff;
+            float: right;
+            padding: 0 21px;
+            line-height: 46px;
+            cursor: pointer;
+        }
+
+        #header .search-btn {
+            color: #fff;
+            float: right;
+            padding: 0 21px;
+            line-height: 46px;
+            cursor: pointer;
+        }
+
+        #header .search-btn:hover {
+            background-color: #f44336;
+        }
+
+        #header .search-icon {
+            color: #fff;
+            font-size: 20px;
+
+        }
+
+        #header .search-btn:hover {
+            background-color: #000;
+        }
+
+        #header .search-icon {
+            color: #fff;
+            font-size: 20px;
+
+        }
+
+        /*  */
+        #slide {
+            margin-top: 46px;
+            padding-top: 50%;
+            background: url(https://cuahangdep.vn/storage/app/media/thiet-ke-shop-FPT/thiet-ke-shop-fpt-2.jpg) top center/ cover no-repeat;
+
+        }
+
+        #slide .text-content {
+            position: absolute;
+            bottom: 47px;
+            color: #fff;
+            width: 100%;
+            text-align: center;
+        }
+
+        #slide .text-heading {
+            font-weight: 500;
+            font-size: 40px;
+
+        }
+
+        #slide .text-description {
+            font-size: 20px;
+            margin-top: 25px;
+
+        }
+
+        /* content  */
+
+        #content {}
+
+        #content .content-section {
+            width: 800px;
+            padding: 64px 0;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #content .section-heading {
+            font-size: 30px;
+            text-align: center;
+            font-weight: 500;
+            letter-spacing: 4px;
+        }
+
+        #content .section-sub-heading {
+            font-size: 15px;
+            text-align: center;
+            margin-top: 25px;
+            font-style: italic;
+            opacity: 0.6;
+        }
+
+        #content .about-text {
+            margin-top: 25px;
+            font-size: 15px;
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        #content .member-list {
+            margin-top: 48px;
+            overflow: hidden;
+
+        }
+
+        #content .member-item {
+            float: left;
+            width: 33.33333%;
+            text-align: center;
+
+        }
+
+        #content .member-name {
+            font-size: 15px;
+
+        }
+
+        #content .member-img {
+            border-radius: 5px;
+            width: 154px;
+            margin-top: 15px;
+            padding-bottom: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+            <!-- Begin: Nav -->
+            <ul id="nav">
+                <li><a href="ASM.html">Trang chủ</a></li>
+                <li><a href="Lienhe.html">Liên hệ</a></li>
+                <li><a href="gioithieu.html">Giới thiệu</a></li>
+                <li><a href="gopy.html">Góp ý</a></li>
+                <li><a href="hoidap.html">Hỏi đáp</a></li>
+                <li>
+                    <a href="">
+                        Các sản phẩm
+                        <i class="nav-arrow-down ti-angle-down"></i>
+                    </a>
+                    <ul class="subnav">
+                        <li><a href="dienthoai.html">Điện thoại</a></li>
+                        <li><a href="maytinh.html">Máy tính</a></li>
+                        <li><a href="dongho.html">Đồng hồ</a></li>
+                        <li><a href="amthanh.html">Âm thanh</a></li>
+                        <li><a href="phukien.html">Phụ kiện</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="search-btn">
+                <i class="ti-search"></i>
+            </div>
+        </div>
+
+        <div id="slide">
+            <div class="text-content">
+                <h2 class="text-heading">FPT SHOP</h2>
+                <div class="text-description">Chuyên cung cấp các thiết bị hiện đại cho khách hàng</div>
+            </div>
+        </div>
+
+        <div id="content">
+            <!-- About section -->
+            <div class="content-section">
+                <h2 class="section-heading">IPHONE 12</h2>
+                <p class="section-sub-heading">13 tháng 10 năm 2022</p>
+                <p class="about-text">
+                    Apple đã có một thông báo chính thức về một sự kiện sắp diễn ra vào ngày 13/10 tới và nhiều khả năng
+                    iPhone 12 (iPhone 2020) sẽ xuất hiện tại sự kiện đó. iPhone 12 là mẫu smartphone đang rất được quan
+                    tâm sau sự ra mắt cách đây không lâu của iPhone SE (thế hệ thứ 2). Đã có rất nhiều những thông tin
+                    xuất hiện về thiết kế, cấu hình, giá bán và cả phụ kiện. Mình đã tổng hợp những thông tin rò rỉ
+                    iPhone 12 đáng tin nhất và sau khi đọc xong bài này, đảm bảo bạn sẽ biết tất tần tật những gì nổi
+                    bật nhất sẽ có trên iPhone 12 sắp ra mắt.
+                    Xem trực tiếp liveblog sự kiện Apple ra mắt iPhone 12:
+                </p>
+                <div class="member-list">
+                    <div class="member-item">
+                        <p class="member-name">IPHONE 12</p>
+                        <img src="https://cdn.nguyenkimmall.com/images/thumbnails/600/336/detailed/698/10047702-dien-thoai-iphone-12-64gb-xanh-la-1.jpg"
+                            alt="" class="member-img">
+                    </div>
+                    <div class="member-item">
+                        <p class="member-name">IPHONE 12</p>
+                        <img src="https://cdn.nguyenkimmall.com/images/thumbnails/600/336/detailed/697/10047666-dien-thoai-iphone-12-mini-64gb-xanh-duong-1.jpg"
+                            alt="" class="member-img">
+                    </div>
+                    <div class="member-item">
+                        <p class="member-name">IPHONE 12</p>
+                        <img src="https://cdn.nguyenkimmall.com/images/thumbnails/600/336/detailed/698/10047700-dien-thoai-iphone-12-64gb-do-1.jpg"
+                            alt="" class="member-img">
+                    </div>
+                </div>
+                <hr>
+                <div class="content-section">
+                    <h2 class="section-heading ">Đồng Hồ Thông Minh</h2>
+                    <p class="section-sub-heading">apple watch</p>
+                    <div class="member-list">
+                        <div class="member-item">
+                            <p class="member-name">Apple Watch SE GPS </p>
+                            <img src="https://images.fpt.shop/unsafe/fit-in/576x430/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/11/11/637722354703744481_apple-watch-se-gps-40mm-vien-nhom-day-cao-su-trang-2.jpg"
+                                alt="" class="member-img">
+                        </div>
+                        <div class="member-item">
+                            <p class="member-name">Apple Watch Ultra</p>
+                            <img src="https://images.fpt.shop/unsafe/fit-in/585x390/filters:quality(5):fill(white)/fptshop.com.vn/Uploads/Originals/2022/9/8/637982457696470604_apple-watch-ultra-49mm-alpine-loop-cam-1.jpg"
+                                alt="" class="member-img">
+                        </div>
+                        <div class="member-item">
+                            <p class="member-name">Apple Watch Series 8</p>
+                            <img src="https://images.fpt.shop/unsafe/fit-in/576x430/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/11/11/637722354703744481_apple-watch-se-gps-40mm-vien-nhom-day-cao-su-trang-2.jpg"
+                                alt="" class="member-img">
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="content-section">
+                    <h2 class="section-heading ">Phụ kiện</h2>
+                    <p class="section-sub-heading">Pin sạc dự phòng</p>
+                    <div class="member-list">
+                        <div class="member-item">
+                            <p class="member-name">Aukey Basix Slim </p>
+                            <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/a/u/aukey_basix_slim_pb_n99_1.jpg"
+                                alt="" class="member-img">
+                        </div>
+                        <div class="member-item">
+                            <p class="member-name"> Magsafe Innostyle PowerMag</p>
+                            <img src="https://jackmishop.vn/Data/Sites/1/Product/28807/innostyle-magsafe-15.png" alt=""
+                                class="member-img">
+                        </div>
+                        <div class="member-item">
+                            <p class="member-name">Anker PowerCore Select</p>
+                            <img src="https://ankervietnam.net/wp-content/uploads/2020/05/pin-sac-du-phong-anker-powercore-select-10000mah-a1223.jpg"
+                                alt="" class="member-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <footer>
+           <div>
+            <li>Giới thiệu về công ty</li>
+            <li>Chính sách bảo mật</li>
+            <li>Quy chế hoạt động</li>
+            <li>Kiếm tra hóa đơn điện tử</li>
+            <li>Tra cứu thông tin bảo hành</li>
+            <li>Câu hỏi thường gặp mua hàng</li>
+           </div>
+        </footer> -->
+        </div>
+    </div>
+
+
+
+</body> 
+
+</html>
